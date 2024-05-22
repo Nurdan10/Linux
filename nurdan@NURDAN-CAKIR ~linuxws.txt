@@ -1,0 +1,151 @@
+nurdan@NURDAN-CAKIR:~$ pwd
+/home/nurdan
+nurdan@NURDAN-CAKIR:~$ mkdir linux_5
+nurdan@NURDAN-CAKIR:~$ cd linux_5
+nurdan@NURDAN-CAKIR:~/linux_5$ touch file
+nurdan@NURDAN-CAKIR:~/linux_5$ vim file
+nurdan@NURDAN-CAKIR:~/linux_5$ vim file
+nurdan@NURDAN-CAKIR:~/linux_5$ vim file
+nurdan@NURDAN-CAKIR:~/linux_5$ cd ..
+nurdan@NURDAN-CAKIR:~$ ls /nurdan/share/icons
+ls: cannot access '/nurdan/share/icons': No such file or directory
+nurdan@NURDAN-CAKIR:~$ ~/.icons
+-bash: /home/nurdan/.icons: No such file or directory
+nurdan@NURDAN-CAKIR:~$ pwd
+/home/nurdan
+nurdan@NURDAN-CAKIR:~$ vim file
+nurdan@NURDAN-CAKIR:~$ cv linux_5
+cv: command not found
+nurdan@NURDAN-CAKIR:~$ cd linux_5
+nurdan@NURDAN-CAKIR:~/linux_5$ vim file
+nurdan@NURDAN-CAKIR:~/linux_5$
+nurdan@NURDAN-CAKIR:~/linux_5$
+nurdan@NURDAN-CAKIR:~/linux_5$ pwd
+/home/nurdan/linux_5
+nurdan@NURDAN-CAKIR:~/linux_5$ cd linux_5
+-bash: cd: linux_5: No such file or directory
+nurdan@NURDAN-CAKIR:~/linux_5$ cd ..
+nurdan@NURDAN-CAKIR:~$ pwd
+/home/nurdan
+nurdan@NURDAN-CAKIR:~$ mkdir clarusway
+nurdan@NURDAN-CAKIR:~$ cd clarusway/
+nurdan@NURDAN-CAKIR:~/clarusway$ ls -l
+total 0
+nurdan@NURDAN-CAKIR:~/clarusway$ touch test.txt
+nurdan@NURDAN-CAKIR:~/clarusway$ echo "hello" > test.txt
+nurdan@NURDAN-CAKIR:~/clarusway$ echo "My name is Robert" >> test.txt
+nurdan@NURDAN-CAKIR:~/clarusway$ cat test.txt
+hello
+My name is Robert
+nurdan@NURDAN-CAKIR:~/clarusway$ cat > test1.txt
+hello, this is second text file
+nurdan@NURDAN-CAKIR:~/clarusway$ cat test1.txt
+hello, this is second text file
+nurdan@NURDAN-CAKIR:~/clarusway$ cat {test,test1}.txt
+hello
+My name is Robert
+hello, this is second text file
+nurdan@NURDAN-CAKIR:~/clarusway$ touch multiple{1..10}.txt
+nurdan@NURDAN-CAKIR:~/clarusway$ ls
+multiple1.txt   multiple2.txt  multiple4.txt  multiple6.txt  multiple8.txt  test.txt
+multiple10.txt  multiple3.txt  multiple5.txt  multiple7.txt  multiple9.txt  test1.txt
+nurdan@NURDAN-CAKIR:~/clarusway$ cd ..
+nurdan@NURDAN-CAKIR:~$ mkdir europe
+nurdan@NURDAN-CAKIR:~$ touch {lab,lab1}.txt
+nurdan@NURDAN-CAKIR:~$ echo "This is the first line of the second directory" > lab.txt
+nurdan@NURDAN-CAKIR:~$ cat lab.txt
+This is the first line of the second directory
+nurdan@NURDAN-CAKIR:~$ cd clarusway/
+nurdan@NURDAN-CAKIR:~/clarusway$ cd ..
+nurdan@NURDAN-CAKIR:~$ mv {lab,lab1}.txt europe/
+nurdan@NURDAN-CAKIR:~$ cd europe/
+nurdan@NURDAN-CAKIR:~/europe$ ls
+lab.txt  lab1.txt
+nurdan@NURDAN-CAKIR:~/europe$ cp lab.txt newlab.txt
+nurdan@NURDAN-CAKIR:~/europe$ ls
+lab.txt  lab1.txt  newlab.txt
+nurdan@NURDAN-CAKIR:~/europe$ ls *.txt
+lab.txt  lab1.txt  newlab.txt
+nurdan@NURDAN-CAKIR:~/europe$ ls n*.txt
+newlab.txt
+nurdan@NURDAN-CAKIR:~/europe$ cp newlab.txt ../clarusway/ .
+cp: 'newlab.txt' and './newlab.txt' are the same file
+cp: -r not specified; omitting directory '../clarusway/'
+nurdan@NURDAN-CAKIR:~/europe$ cp newlab.txt ../clarusway/
+nurdan@NURDAN-CAKIR:~/europe$ cp m*{6..10}.txt ../clarusway/ .
+cp: cannot stat 'm*6.txt': No such file or directory
+cp: cannot stat 'm*7.txt': No such file or directory
+cp: cannot stat 'm*8.txt': No such file or directory
+cp: cannot stat 'm*9.txt': No such file or directory
+cp: cannot stat 'm*10.txt': No such file or directory
+cp: -r not specified; omitting directory '../clarusway/'
+nurdan@NURDAN-CAKIR:~/europe$ cp m*{6..10}.txt ../clarusway/
+cp: cannot stat 'm*6.txt': No such file or directory
+cp: cannot stat 'm*7.txt': No such file or directory
+cp: cannot stat 'm*8.txt': No such file or directory
+cp: cannot stat 'm*9.txt': No such file or directory
+cp: cannot stat 'm*10.txt': No such file or directory
+nurdan@NURDAN-CAKIR:~/europe$ cp ../clarusway/m*{6..10}.txt .
+nurdan@NURDAN-CAKIR:~/europe$ ls
+lab.txt   multiple10.txt  multiple7.txt  multiple9.txt
+lab1.txt  multiple6.txt   multiple8.txt  newlab.txt
+nurdan@NURDAN-CAKIR:~/europe$ cd ..
+nurdan@NURDAN-CAKIR:~$ cd clarusway/
+nurdan@NURDAN-CAKIR:~/clarusway$ ls
+multiple1.txt   multiple2.txt  multiple4.txt  multiple6.txt  multiple8.txt  newlab.txt  test1.txt
+multiple10.txt  multiple3.txt  multiple5.txt  multiple7.txt  multiple9.txt  test.txt
+nurdan@NURDAN-CAKIR:~/clarusway$ cd..
+cd..: command not found
+nurdan@NURDAN-CAKIR:~/clarusway$ cd eu
+-bash: cd: eu: No such file or directory
+nurdan@NURDAN-CAKIR:~/clarusway$ cd..
+cd..: command not found
+nurdan@NURDAN-CAKIR:~/clarusway$ cd ..
+nurdan@NURDAN-CAKIR:~$ cd europe/
+nurdan@NURDAN-CAKIR:~/europe$ mv newlab.txt linuxlab.txt
+nurdan@NURDAN-CAKIR:~/europe$ ls -l
+total 8
+-rw-r--r-- 1 nurdan nurdan 47 Jan 23 18:44 lab.txt
+-rw-r--r-- 1 nurdan nurdan  0 Jan 23 18:43 lab1.txt
+-rw-r--r-- 1 nurdan nurdan 47 Jan 23 18:47 linuxlab.txt
+-rw-r--r-- 1 nurdan nurdan  0 Jan 23 18:53 multiple10.txt
+-rw-r--r-- 1 nurdan nurdan  0 Jan 23 18:53 multiple6.txt
+-rw-r--r-- 1 nurdan nurdan  0 Jan 23 18:53 multiple7.txt
+-rw-r--r-- 1 nurdan nurdan  0 Jan 23 18:53 multiple8.txt
+-rw-r--r-- 1 nurdan nurdan  0 Jan 23 18:53 multiple9.txt
+nurdan@NURDAN-CAKIR:~/europe$ ls -l linuxlab.txt
+-rw-r--r-- 1 nurdan nurdan 47 Jan 23 18:47 linuxlab.txt
+nurdan@NURDAN-CAKIR:~/europe$ chmod ugo=rwx linuxlab.txt
+nurdan@NURDAN-CAKIR:~/europe$ chmod -v ugo=rwx linuxlab.txt
+mode of 'linuxlab.txt' retained as 0777 (rwxrwxrwx)
+nurdan@NURDAN-CAKIR:~/europe$ chmod -v 666 linuxlab.txt
+mode of 'linuxlab.txt' changed from 0777 (rwxrwxrwx) to 0666 (rw-rw-rw-)
+nurdan@NURDAN-CAKIR:~/europe$ chmod -v +x linuxlab.txt
+mode of 'linuxlab.txt' changed from 0666 (rw-rw-rw-) to 0777 (rwxrwxrwx)
+nurdan@NURDAN-CAKIR:~/europe$ rm linuxlab.txt
+nurdan@NURDAN-CAKIR:~/europe$ ls
+lab.txt  lab1.txt  multiple10.txt  multiple6.txt  multiple7.txt  multiple8.txt  multiple9.txt
+nurdan@NURDAN-CAKIR:~/europe$ mkdir america
+nurdan@NURDAN-CAKIR:~/europe$ ls
+america  lab1.txt        multiple6.txt  multiple8.txt
+lab.txt  multiple10.txt  multiple7.txt  multiple9.txt
+nurdan@NURDAN-CAKIR:~/europe$ rmdir america/
+nurdan@NURDAN-CAKIR:~/europe$ ls
+lab.txt  lab1.txt  multiple10.txt  multiple6.txt  multiple7.txt  multiple8.txt  multiple9.txt
+nurdan@NURDAN-CAKIR:~/europe$ cd ..
+nurdan@NURDAN-CAKIR:~$ rm -r clarusway/
+nurdan@NURDAN-CAKIR:~$ ls
+EXERCISES  app.py  file1.txt  hello        hushlogin  linux_dersi_2  snap
+Lessons    europe  folder2    history.txt  linux_5    myfile.txt
+nurdan@NURDAN-CAKIR:~$ cd europe/
+nurdan@NURDAN-CAKIR:~/europe$ touch .linuxworkshop.txt
+nurdan@NURDAN-CAKIR:~/europe$ ls
+lab.txt  lab1.txt  multiple10.txt  multiple6.txt  multiple7.txt  multiple8.txt  multiple9.txt
+nurdan@NURDAN-CAKIR:~/europe$ ls -a
+.   .linuxworkshop.txt  lab1.txt        multiple6.txt  multiple8.txt
+..  lab.txt             multiple10.txt  multiple7.txt  multiple9.txt
+nurdan@NURDAN-CAKIR:~/europe$ mv .linuxworkshop.txt linuxworkshop.txt
+nurdan@NURDAN-CAKIR:~/europe$ ls
+lab.txt   linuxworkshop.txt  multiple6.txt  multiple8.txt
+lab1.txt  multiple10.txt     multiple7.txt  multiple9.txt
+nurdan@NURDAN-CAKIR:~/europe$

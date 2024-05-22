@@ -1,0 +1,967 @@
+nurdan@NURDAN-CAKIR:~$ mkdir Lessons
+nurdan@NURDAN-CAKIR:~$ pwd
+/home/nurdan
+nurdan@NURDAN-CAKIR:~$ ls
+EXERCISES  Lessons  app.py  clarusway  file1.txt  folder2  history.txt  hushlogin  linux_dersi_2  snap
+nurdan@NURDAN-CAKIR:~$ cd Lessons/
+nurdan@NURDAN-CAKIR:~/Lessons$ mkdir SDLC HTML LINUX
+nurdan@NURDAN-CAKIR:~/Lessons$ LS
+LS: command not found
+nurdan@NURDAN-CAKIR:~/Lessons$ ls
+HTML  LINUX  SDLC
+nurdan@NURDAN-CAKIR:~/Lessons$ mv LINUX Linux
+nurdan@NURDAN-CAKIR:~/Lessons$ ls
+HTML  Linux  SDLC
+nurdan@NURDAN-CAKIR:~/Lessons$ cd SDLC/
+nurdan@NURDAN-CAKIR:~/Lessons/SDLC$ echo "Software Development Life Cycle (SDLC) is a process used by the software industry to
+design, develop and test high quality softwares. The SDLC aims to produce a highquality software that meets or exceeds customer expectations, reaches completion
+within times and cost estimates." > sdlc.txt
+nurdan@NURDAN-CAKIR:~/Lessons/SDLC$ touch agile.txt
+nurdan@NURDAN-CAKIR:~/Lessons/SDLC$ mkdir DevOps Waterfall
+nurdan@NURDAN-CAKIR:~/Lessons/SDLC$ ls
+DevOps  Waterfall  agile.txt  sdlc.txt
+nurdan@NURDAN-CAKIR:~/Lessons/SDLC$ cat sdlc.txt
+Software Development Life Cycle (SDLC) is a process used by the software industry to
+design, develop and test high quality softwares. The SDLC aims to produce a highquality software that meets or exceeds customer expectations, reaches completion
+within times and cost estimates.
+nurdan@NURDAN-CAKIR:~/Lessons/SDLC$ cd DevOps/
+nurdan@NURDAN-CAKIR:~/Lessons/SDLC/DevOps$ touch Dev.txt Ops.txt
+nurdan@NURDAN-CAKIR:~/Lessons/SDLC/DevOps$ ls
+Dev.txt  Ops.txt
+nurdan@NURDAN-CAKIR:~/Lessons/SDLC/DevOps$ cd ..
+nurdan@NURDAN-CAKIR:~/Lessons/SDLC$ cd Waterfall/
+nurdan@NURDAN-CAKIR:~/Lessons/SDLC/Waterfall$ touch phases.txt advantages.txt
+nurdan@NURDAN-CAKIR:~/Lessons/SDLC/Waterfall$ ls
+advantages.txt  phases.txt
+nurdan@NURDAN-CAKIR:~/Lessons/SDLC/Waterfall$ cd ../../
+nurdan@NURDAN-CAKIR:~/Lessons$ ld
+ld: no input files
+nurdan@NURDAN-CAKIR:~/Lessons$ ls
+HTML  Linux  SDLC
+nurdan@NURDAN-CAKIR:~/Lessons$ cd HTML/
+nurdan@NURDAN-CAKIR:~/Lessons/HTML$ echo "HTML stands for Hyper Text Markup Language. HTML is the standard markup
+language for creating Web pages. HTML describes the structure of a Web page. HTML
+consists of a series of elements. HTML elements tell the browser how to display the
+content." > html.txt
+nurdan@NURDAN-CAKIR:~/Lessons/HTML$ touch cascades.css javascript.js
+nurdan@NURDAN-CAKIR:~/Lessons/HTML$ ls
+cascades.css  html.txt  javascript.js
+nurdan@NURDAN-CAKIR:~/Lessons/HTML$ cat html.txt
+HTML stands for Hyper Text Markup Language. HTML is the standard markup
+language for creating Web pages. HTML describes the structure of a Web page. HTML
+consists of a series of elements. HTML elements tell the browser how to display the
+content.
+nurdan@NURDAN-CAKIR:~/Lessons/HTML$ cd ..
+nurdan@NURDAN-CAKIR:~/Lessons$ cd Linux/
+nurdan@NURDAN-CAKIR:~/Lessons/Linux$ echo "An operating system (OS) is system software that manages computer hardware,
+software resources, and provides common services for computer programs" > operatingsys.txt
+nurdan@NURDAN-CAKIR:~/Lessons/Linux$ mkdir CLI GUI
+nurdan@NURDAN-CAKIR:~/Lessons/Linux$ cd CLI/
+nurdan@NURDAN-CAKIR:~/Lessons/Linux/CLI$ touch basics.txt advanced.txt
+nurdan@NURDAN-CAKIR:~/Lessons/Linux/CLI$ cd..
+cd..: command not found
+nurdan@NURDAN-CAKIR:~/Lessons/Linux/CLI$ cd ..
+nurdan@NURDAN-CAKIR:~/Lessons/Linux$ cd GUI/
+nurdan@NURDAN-CAKIR:~/Lessons/Linux/GUI$ touch ubuntu.txt debian.txt mint.txt red_hat.txt
+nurdan@NURDAN-CAKIR:~/Lessons/Linux/GUI$ ls
+debian.txt  mint.txt  red_hat.txt  ubuntu.txt
+nurdan@NURDAN-CAKIR:~/Lessons/Linux/GUI$ cd ..
+nurdan@NURDAN-CAKIR:~/Lessons/Linux$ cd CLI/
+nurdan@NURDAN-CAKIR:~/Lessons/Linux/CLI$ mkdir Commands
+nurdan@NURDAN-CAKIR:~/Lessons/Linux/CLI$ cd Commands/
+nurdan@NURDAN-CAKIR:~/Lessons/Linux/CLI/Commands$ echo "ls command lists the current directory contents." > ls.txt
+nurdan@NURDAN-CAKIR:~/Lessons/Linux/CLI/Commands$ echo "pwd command shows the user’s current path." > pwd.txt
+nurdan@NURDAN-CAKIR:~/Lessons/Linux/CLI/Commands$ echo "cd [dir] command changes the current directory" > cd.txt
+nurdan@NURDAN-CAKIR:~/Lessons/Linux/CLI/Commands$ echo "cp command copies a file to another location" > cp.txt
+nurdan@NURDAN-CAKIR:~/Lessons/Linux/CLI/Commands$ man ls -a
+No manual entry for -a
+nurdan@NURDAN-CAKIR:~/Lessons/Linux/CLI/Commands$ man ls -a > ls-a.txt
+No manual entry for -a
+nurdan@NURDAN-CAKIR:~/Lessons/Linux/CLI/Commands$ ls
+cd.txt  cp.txt  ls-a.txt  ls.txt  pwd.txt
+nurdan@NURDAN-CAKIR:~/Lessons/Linux/CLI/Commands$ man ls -al > ls_al.txt
+No manual entry for -al
+nurdan@NURDAN-CAKIR:~/Lessons/Linux/CLI/Commands$ cat ls_al.txt
+LS(1)                                                  User Commands                                                  LS(1)
+
+NAME
+       ls - list directory contents
+
+SYNOPSIS
+       ls [OPTION]... [FILE]...
+
+DESCRIPTION
+       List  information about the FILEs (the current directory by default).  Sort entries alphabetically if none of -cftu‐
+       vSUX nor --sort is specified.
+
+       Mandatory arguments to long options are mandatory for short options too.
+
+       -a, --all
+              do not ignore entries starting with .
+
+       -A, --almost-all
+              do not list implied . and ..
+
+       --author
+              with -l, print the author of each file
+
+       -b, --escape
+              print C-style escapes for nongraphic characters
+
+       --block-size=SIZE
+              with -l, scale sizes by SIZE when printing them; e.g., '--block-size=M'; see SIZE format below
+
+       -B, --ignore-backups
+              do not list implied entries ending with ~
+
+       -c     with -lt: sort by, and show, ctime (time of last modification of file  status  information);  with  -l:  show
+              ctime and sort by name; otherwise: sort by ctime, newest first
+
+       -C     list entries by columns
+
+       --color[=WHEN]
+              colorize the output; WHEN can be 'always' (default if omitted), 'auto', or 'never'; more info below
+
+       -d, --directory
+              list directories themselves, not their contents
+
+       -D, --dired
+              generate output designed for Emacs' dired mode
+
+       -f     do not sort, enable -aU, disable -ls --color
+
+       -F, --classify
+              append indicator (one of */=>@|) to entries
+
+       --file-type
+              likewise, except do not append '*'
+
+       --format=WORD
+              across -x, commas -m, horizontal -x, long -l, single-column -1, verbose -l, vertical -C
+
+       --full-time
+              like -l --time-style=full-iso
+
+       -g     like -l, but do not list owner
+
+       --group-directories-first
+              group directories before files;
+
+              can be augmented with a --sort option, but any use of --sort=none (-U) disables grouping
+
+       -G, --no-group
+              in a long listing, don't print group names
+
+       -h, --human-readable
+              with -l and -s, print sizes like 1K 234M 2G etc.
+
+       --si   likewise, but use powers of 1000 not 1024
+
+       -H, --dereference-command-line
+              follow symbolic links listed on the command line
+
+       --dereference-command-line-symlink-to-dir
+              follow each command line symbolic link
+
+              that points to a directory
+
+       --hide=PATTERN
+              do not list implied entries matching shell PATTERN (overridden by -a or -A)
+
+       --hyperlink[=WHEN]
+              hyperlink file names; WHEN can be 'always' (default if omitted), 'auto', or 'never'
+
+       --indicator-style=WORD
+              append  indicator  with style WORD to entry names: none (default), slash (-p), file-type (--file-type), clas‐
+              sify (-F)
+
+       -i, --inode
+              print the index number of each file
+
+       -I, --ignore=PATTERN
+              do not list implied entries matching shell PATTERN
+
+       -k, --kibibytes
+              default to 1024-byte blocks for disk usage; used only with -s and per directory totals
+
+       -l     use a long listing format
+
+       -L, --dereference
+              when showing file information for a symbolic link, show information for the file the link  references  rather
+              than for the link itself
+
+       -m     fill width with a comma separated list of entries
+
+       -n, --numeric-uid-gid
+              like -l, but list numeric user and group IDs
+
+       -N, --literal
+              print entry names without quoting
+
+       -o     like -l, but do not list group information
+
+       -p, --indicator-style=slash
+              append / indicator to directories
+
+       -q, --hide-control-chars
+              print ? instead of nongraphic characters
+
+       --show-control-chars
+              show nongraphic characters as-is (the default, unless program is 'ls' and output is a terminal)
+
+       -Q, --quote-name
+              enclose entry names in double quotes
+
+       --quoting-style=WORD
+              use  quoting style WORD for entry names: literal, locale, shell, shell-always, shell-escape, shell-escape-al‐
+              ways, c, escape (overrides QUOTING_STYLE environment variable)
+
+       -r, --reverse
+              reverse order while sorting
+
+       -R, --recursive
+              list subdirectories recursively
+
+       -s, --size
+              print the allocated size of each file, in blocks
+
+       -S     sort by file size, largest first
+
+       --sort=WORD
+              sort by WORD instead of name: none (-U), size (-S), time (-t), version (-v), extension (-X)
+
+       --time=WORD
+              change the default of using modification times; access time (-u):  atime,  access,  use;  change  time  (-c):
+              ctime, status; birth time: birth, creation;
+
+              with -l, WORD determines which time to show; with --sort=time, sort by WORD (newest first)
+
+       --time-style=TIME_STYLE
+              time/date format with -l; see TIME_STYLE below
+
+       -t     sort by time, newest first; see --time
+
+       -T, --tabsize=COLS
+              assume tab stops at each COLS instead of 8
+
+       -u     with  -lt: sort by, and show, access time; with -l: show access time and sort by name; otherwise: sort by ac‐
+              cess time, newest first
+
+       -U     do not sort; list entries in directory order
+
+       -v     natural sort of (version) numbers within text
+
+       -w, --width=COLS
+              set output width to COLS.  0 means no limit
+
+       -x     list entries by lines instead of by columns
+
+       -X     sort alphabetically by entry extension
+
+       -Z, --context
+              print any security context of each file
+
+       -1     list one file per line.  Avoid '\n' with -q or -b
+
+       --help display this help and exit
+
+       --version
+              output version information and exit
+
+       The SIZE argument is an integer and optional unit (example: 10K is 10*1024).  Units are K,M,G,T,P,E,Z,Y  (powers  of
+       1024) or KB,MB,... (powers of 1000).  Binary prefixes can be used, too: KiB=K, MiB=M, and so on.
+
+       The  TIME_STYLE argument can be full-iso, long-iso, iso, locale, or +FORMAT.  FORMAT is interpreted like in date(1).
+       If FORMAT is FORMAT1<newline>FORMAT2, then FORMAT1  applies  to  non-recent  files  and  FORMAT2  to  recent  files.
+       TIME_STYLE prefixed with 'posix-' takes effect only outside the POSIX locale.  Also the TIME_STYLE environment vari‐
+       able sets the default style to use.
+
+       Using color to distinguish file types is disabled both by default and with  --color=never.   With  --color=auto,  ls
+       emits  color  codes  only  when  standard output is connected to a terminal.  The LS_COLORS environment variable can
+       change the settings.  Use the dircolors command to set it.
+
+   Exit status:
+       0      if OK,
+
+       1      if minor problems (e.g., cannot access subdirectory),
+
+       2      if serious trouble (e.g., cannot access command-line argument).
+
+AUTHOR
+       Written by Richard M. Stallman and David MacKenzie.
+
+REPORTING BUGS
+       GNU coreutils online help: <https://www.gnu.org/software/coreutils/>
+       Report any translation bugs to <https://translationproject.org/team/>
+
+COPYRIGHT
+       Copyright © 2020 Free Software Foundation, Inc.  License GPLv3+: GNU GPL version  3  or  later  <https://gnu.org/li‐
+       censes/gpl.html>.
+       This is free software: you are free to change and redistribute it.  There is NO WARRANTY, to the extent permitted by
+       law.
+
+SEE ALSO
+       Full documentation <https://www.gnu.org/software/coreutils/ls>
+       or available locally via: info '(coreutils) ls invocation'
+
+GNU coreutils 8.32                                     February 2022                                                  LS(1)
+nurdan@NURDAN-CAKIR:~/Lessons/Linux/CLI/Commands$ man ls -c > ls_c.txt
+No manual entry for -c
+nurdan@NURDAN-CAKIR:~/Lessons/Linux/CLI/Commands$ man ls -l > ls_l.txt
+No manual entry for -l
+nurdan@NURDAN-CAKIR:~/Lessons/Linux/CLI/Commands$ man ls -b > ls_b.txt
+No manual entry for -b
+nurdan@NURDAN-CAKIR:~/Lessons/Linux/CLI/Commands$ ls
+cd.txt  cp.txt  ls-a.txt  ls.txt  ls_al.txt  ls_b.txt  ls_c.txt  ls_l.txt  pwd.txt
+nurdan@NURDAN-CAKIR:~/Lessons/Linux/CLI/Commands$ cd ../../../
+nurdan@NURDAN-CAKIR:~/Lessons$ tree
+.
+├── HTML
+│   ├── cascades.css
+│   ├── html.txt
+│   └── javascript.js
+├── Linux
+│   ├── CLI
+│   │   ├── Commands
+│   │   │   ├── cd.txt
+│   │   │   ├── cp.txt
+│   │   │   ├── ls-a.txt
+│   │   │   ├── ls.txt
+│   │   │   ├── ls_al.txt
+│   │   │   ├── ls_b.txt
+│   │   │   ├── ls_c.txt
+│   │   │   ├── ls_l.txt
+│   │   │   └── pwd.txt
+│   │   ├── advanced.txt
+│   │   └── basics.txt
+│   ├── GUI
+│   │   ├── debian.txt
+│   │   ├── mint.txt
+│   │   ├── red_hat.txt
+│   │   └── ubuntu.txt
+│   └── operatingsys.txt
+└── SDLC
+    ├── DevOps
+    │   ├── Dev.txt
+    │   └── Ops.txt
+    ├── Waterfall
+    │   ├── advantages.txt
+    │   └── phases.txt
+    ├── agile.txt
+    └── sdlc.txt
+
+8 directories, 25 files
+nurdan@NURDAN-CAKIR:~/Lessons$ history > history_lessons.txt
+nurdan@NURDAN-CAKIR:~/Lessons$ ls
+HTML  Linux  SDLC  history_lessons.txt
+nurdan@NURDAN-CAKIR:~/Lessons$ cat history_lessons.txt
+    1  pwd
+    2  ls
+    3  pwd
+    4  clear
+    5  pwd
+    6  mkdir linux_dersi_2
+    7  ls
+    8  ls -l
+    9  ls -a
+   10  ls -al
+   11  clear
+   12  ls --help
+   13  clear
+   14  ls
+   15  cd linux_dersi_2
+   16  cd ..
+   17  cd linux_dersi_2/ LS
+   18  CD linux_dersi_2/ cd linux_dersi_2/
+   19  cd~
+   20  ls
+   21  cd sql
+   22  ls
+   23  cd linux_dersi_2/
+   24  mkdir calisma_1
+   25  ls
+   26  explorer.exe.
+   27  clear
+   28  cd calisma_1
+   29  explorer.exe.
+   30  clear
+   31  cd ..
+   32  cd desktop
+   33  clear
+   34  pwd
+   35  cd ../..
+   36  explorer.exe.
+   37  clear
+   38  cd desktop
+   39  cd linux_ders_2
+   40  clear
+   41  cd desktop
+   42  clear
+   43  ls
+   44  cd linux_dersi_2/
+   45  touch dosya
+   46  touch index.html
+   47  touch app.py
+   48  touch index.js
+   49  cd calisma_1
+   50  cd ..
+   51  ls
+   52  rmdir dosya
+   53  mkdir folder
+   54  ls
+   55  rmdir app.py
+   56  rm app.py
+   57  ls
+   58  touch app.py
+   59  ls
+   60  rm dosya
+   61  ls
+   62  cd ..
+   63  mkdir linux_ders_2/folder2
+   64  mkdir folder
+   65  ls
+   66  cd linux_dersi_2/
+   67  ls
+   68  cp app.py python.py
+   69  ls
+   70  cp python.py ../folder/
+   71  ls
+   72  cd folder
+   73  ls
+   74  cd ../..
+   75  cd folder/
+   76  ls
+   77  cp ../linux_dersi_2//index.js .
+   78  ls
+   79  cp ../linux_dersi_2/index.js index1.js
+   80  ls
+   81  rm index1.js
+   82  ls
+   83  touch dosya
+   84  ls
+   85  mv dosya python1.py
+   86  ls
+   87  mv python1.py ../linux_dersi_2/
+   88  ls
+   89  cd ..
+   90  cd linux_dersi_2/
+   91  ls
+   92  mv python.py ../folder/
+   93  ls
+   94  cd..
+   95  cd ..
+   96  cd folder/
+   97  ls
+   98  clear
+   99  ls ../linux_dersi_2/
+  100  cd ..
+  101  cd linux_dersi_2/
+  102  ls
+  103  echo "Hello World!" >file1
+  104  ls
+  105  cat file1
+  106  echo "Bu bir python dosyasidir." > app.py
+  107  cat app.py
+  108  echo "Bu bir js dosyasidir." > app.py
+  109  cat app.py
+  110  echo "Bu bir python dosyasidir." >> app.py
+  111  cat app.py
+  112  echo "Merhabe Dünya!" >> file1
+  113  cat file1
+  114  clear
+  115  cd ..
+  116  clear
+  117  mkdir clarusway
+  118  ls
+  119  cd clarusway/
+  120  mkdir lesson
+  121  ls
+  122  cd ..
+  123  rm-rf folder
+  124  rm-f folder
+  125  clear
+  126  ls
+  127  tree
+  128  sudo apt  install tree
+  129  clear
+  130  tree
+  131  sudo apt  install tree
+  132  rmdir lesson
+  133  rm lesson
+  134  clear
+  135  cd clarusway/
+  136  mkdir materials
+  137  ls
+  138  cd lesson/
+  139  touch linux.txt
+  140  ls
+  141  echo "I love Linux" >> linux.txt
+  142  echo "I can create a website" >> html.txt
+  143  ls
+  144  cat html.txt
+  145  cd ..
+  146  cd materials/
+  147  cd ..
+  148  mv lesson lessons
+  149  ls
+  150  cd materials/
+  151  echo "Pre-class" > lms.txt
+  152  ls
+  153  cat lms.txt
+  154  echo "pst-class" > try-it.txt
+  155  ls
+  156  cat try-it.txt
+  157  echo "post_class" > try-it.txt
+  158  cat try-it.txt
+  159  tree
+  160  sudo apt  install tree
+  161  tree
+  162  sudo snap install tree
+  163  clarusway/tree
+  164  tree
+  165  history
+  166  cd linux_dersi_2/
+  167  ls
+  168  touch file1.txt
+  169  ls
+  170  cd
+  171  history > file1.txt
+  172  ls l*
+  173  cd linux_dersi_2/
+  174  ls
+  175  ls f???1*
+  176  ls f*
+  177  touch test{1..100}
+  178  ls
+  179  rm test3*
+  180  ls
+  181  cp test4* ../
+  182  ls
+  183  cd ..
+  184  ls
+  185  rm test4*
+  186  ls
+  187  cd linux_dersi_2/
+  188  rm test?5*
+  189  ls
+  190  mkdir folder{1..50}
+  191  ls
+  192  touch dosya{1..20}.py
+  193  ls
+  194  pwd
+  195  touch hushlogin
+  196  ls
+  197  echo "Hosgeldiniz!"
+  198  echo "Hosgeldiniz!" >> file1.txt
+  199  cat file1.txt
+  200  cd
+  201  cd linux_dersi_2/
+  202  ls
+  203  cd test1
+  204  cat > tes1
+  205  cat test1
+  206  cat >> file1
+  207  cat file1
+  208  ls
+  209  cd ..
+  210  ls
+  211  cd linux_dersi_2/
+  212  cp ../app.py .
+  213  cp app.py ../clarusway/
+  214  cd
+  215  ls
+  216  tree
+  217  ls
+  218  cd linux_dersi_2/
+  219  ls
+  220  rm rf*d
+  221  cd calisma_1/
+  222  ls
+  223  cd ..
+  224  mkdir folder2
+  225  cd ..
+  226  mkdir folder2
+  227  ls
+  228  cp -r folder folder2
+  229  ls
+  230  mv folder ./linux_dersi_2/folder1
+  231  cd linux_dersi_2/
+  232  ls
+  233  cd ..
+  234  ls
+  235  clear
+  236  ls
+  237  cd linux_dersi_2/
+  238  ls
+  239  clear
+  240  cd ..
+  241  ls
+  242  cp file1.txt linux_dersi_2/file2.text
+  243  ls
+  244  ls linux_dersi_2/
+  245  cp file1 ~/linux_dersi_2/
+  246  cp file1 ~/clarusway/
+  247  cp file1.txt ~/clarusway/
+  248  ls
+  249  cd clarusway/
+  250  ls
+  251  cd lesson
+  252  cd lesson/
+  253  clear
+  254  cd ..
+  255  cd li
+  256  cd linux_dersi_2/
+  257  ls
+  258  touch python.py
+  259  cat > python.py
+  260  head -15 python.py
+  261  tail -5 python-py
+  262  tail -5 python.py
+  263  man cp
+  264  info ls
+  265  history > history.text
+  266  ls
+  267  man mv > man.txt
+  268  ls
+  269  ct man.txt
+  270  cat man.txt
+  271  head -15 man.txt
+  272  info ls
+  273  info ls > infols.txt
+  274  head infols.txt
+  275  info cp | head -15
+  276  info cp | head -25
+  277  clear
+  278  cd ..
+  279  mkdir EXERCISES
+  280  LS
+  281  ls
+  282  cd EXERCISES/
+  283  mkdir MAN_PAGES
+  284  cd MAN_PAGES/
+  285  man ls > man_ls.txt
+  286  cat man_ls.txt
+  287  echo "This is a test" > file.txt
+  288  man pwd > man_pwd.txt
+  289  man mkdir > man_mkdir.txt
+  290  man rmdir > man_rmdir.txt
+  291  man rm > man_rm.txt
+  292  man cp > man_cp.txt
+  293  man mv > man_mv.txt
+  294  man cat > man_cat.txt
+  295  man echo > man_echo.txt
+  296  touch test_file.txt
+  297  touch file{0..100}.txt
+  298  mkdir folder{a..z}
+  299  ls
+  300  ls > ls_txt
+  301  cat ls_txt
+  302  rm file{0..9}.txt
+  303  ls
+  304  rm file?.txt
+  305  rmdir folder?
+  306  ls
+  307  mkdir folder{a..z}
+  308  ls
+  309  rm rf *
+  310  rm -rf *
+  311  ls
+  312  clear
+  313  cd..
+  314  history | head -20
+  315  history  > ../../history.txt
+  316  ls
+  317  ../../
+  318  ls ../../
+  319  cat history.txt
+  320  pwd > pwd.txt
+  321  ls
+  322  cd ..
+  323  cd MAN_PAGES/
+  324  echo "Bu yaziyi göster" > dosya.txt
+  325  ls
+  326  ls -al > ls.txt
+  327  ls
+  328  cd../..
+  329  cd ..
+  330  cd linux_dersi_2/
+  331  ls
+  332  rm  -rf*
+  333  rm -rf*
+  334  ls
+  335  touch file{1..50}.txt
+  336  touch Clarusway linux dosya info man
+  337  touch nurdan murat vildan serhat
+  338  ls [f, c]*
+  339  ls
+  340  ls [a-c]*
+  341  ls v*
+  342  ls [f,c]*
+  343  cp [a-c]* ../
+  344  ls
+  345  ls [f,c,n,m]*
+  346  ls -al
+  347  ls -al | sort -n
+  348  ls -al sort -r
+  349  ls -al | sort -r
+  350  ls | sort -r
+  351  ls | sort -n
+  352  cd python.py
+  353  cd ..
+  354  python.py
+  355  cd linux_dersi_2/
+  356  cat python.py
+  357  grep -i "Stand up" python.py
+  358  grep -i "Stand up" python.py nurdan
+  359  cat python.py |  grep "Give"
+  360  ls -al | grep "rwx"
+  361  ls -al | grep ".txt"
+  362  man ls | grep "escape"
+  363  man ls | -c "escape"
+  364  man ls | grep -c "escape"
+  365  history > history1.txt
+  366  pwd
+  367  mkdir Lessons
+  368  cd Lessons/
+  369  mkdir SDLC/HTML/Linux
+  370  mkdir -p SDLC/HTML/Linux
+  371  ls
+  372  mkdir -p HTML/Linux
+  373  ls
+  374  mkdir Linux
+  375  ls
+  376  echo "In an essay, article, or book, an introduction (also known as a prolegomenon) is a
+  377  beginning section which states the purpose and goals of the following writing. This is
+  378  generally followed by the body and conclusion" > introduktion.txt
+  379  ls
+  380  cd SDLC
+  381  echo "Software Development Life Cycle (SDLC) is a process used by the software industry to
+  382  design, develop and test high quality softwares. The SDLC aims to produce a highquality software that meets or exceeds customer expectations, reaches completion
+  383  within times and cost estimates." > sdls.txt
+  384  touch agile.txt
+  385  ls
+  386  cat sdls.txt
+  387  mkdir DevOps Waterfall
+  388  ls
+  389  mv sdls.txt sdlc.txt
+  390  ls
+  391  cd DevOps/
+  392  touch Dev.txt Ops.txt
+  393  ls
+  394  cd ..
+  395  cd Waterfall/
+  396  touch phases.txt advantages.txt
+  397  cd ../../
+  398  cd HTML/
+  399  echo "HTML stands for Hyper Text Markup Language. HTML is the standard markup
+  400  language for creating Web pages. HTML describes the structure of a Web page. HTML
+  401  consists of a series of elements. HTML elements tell the browser how to display the
+  402  content." > html.txt
+  403  touch cascades.css javascript.js
+  404  ls
+  405  pwd
+  406  mkdir Lessons
+  407  rm -rf lessons
+  408  ls
+  409  rmdir Lessons
+  410  rm -rf
+  411  ls
+  412  rm -rf Lessons
+  413  ls
+  414  clear
+  415  mkdir Lessons
+  416  pwd
+  417  ls
+  418  cd Lessons/
+  419  mkdir SDLC HTML LINUX
+  420  LS
+  421  ls
+  422  mv LINUX Linux
+  423  ls
+  424  cd SDLC/
+  425  echo "Software Development Life Cycle (SDLC) is a process used by the software industry to
+design, develop and test high quality softwares. The SDLC aims to produce a highquality software that meets or exceeds customer expectations, reaches completion
+within times and cost estimates." > sdlc.txt
+  426  touch agile.txt
+  427  mkdir DevOps Waterfall
+  428  ls
+  429  cat sdlc.txt
+  430  cd DevOps/
+  431  touch Dev.txt Ops.txt
+  432  ls
+  433  cd ..
+  434  cd Waterfall/
+  435  touch phases.txt advantages.txt
+  436  ls
+  437  cd ../../
+  438  ld
+  439  ls
+  440  cd HTML/
+  441  echo "HTML stands for Hyper Text Markup Language. HTML is the standard markup
+language for creating Web pages. HTML describes the structure of a Web page. HTML
+consists of a series of elements. HTML elements tell the browser how to display the
+content." > html.txt
+  442  touch cascades.css javascript.js
+  443  ls
+  444  cat html.txt
+  445  cd ..
+  446  cd Linux/
+  447  echo "An operating system (OS) is system software that manages computer hardware,
+software resources, and provides common services for computer programs" > operatingsys.txt
+  448  mkdir CLI GUI
+  449  cd CLI/
+  450  touch basics.txt advanced.txt
+  451  cd..
+  452  cd ..
+  453  cd GUI/
+  454  touch ubuntu.txt debian.txt mint.txt red_hat.txt
+  455  ls
+  456  cd ..
+  457  cd CLI/
+  458  mkdir Commands
+  459  cd Commands/
+  460  echo "ls command lists the current directory contents." > ls.txt
+  461  echo "pwd command shows the user’s current path." > pwd.txt
+  462  echo "cd [dir] command changes the current directory" > cd.txt
+  463  echo "cp command copies a file to another location" > cp.txt
+  464  man ls -a
+  465  man ls -a > ls-a.txt
+  466  ls
+  467  man ls -al > ls_al.txt
+  468  cat ls_al.txt
+  469  man ls -c > ls_c.txt
+  470  man ls -l > ls_l.txt
+  471  man ls -b > ls_b.txt
+  472  ls
+  473  cd ../../../
+  474  tree
+  475  history > history_lessons.txt
+nurdan@NURDAN-CAKIR:~/Lessons$ cd history_lessons.txt
+-bash: cd: history_lessons.txt: Not a directory
+nurdan@NURDAN-CAKIR:~/Lessons$ ls
+HTML  Linux  SDLC  history_lessons.txt
+nurdan@NURDAN-CAKIR:~/Lessons$ tail -120 history_lessons.txt
+  362  man ls | grep "escape"
+  363  man ls | -c "escape"
+  364  man ls | grep -c "escape"
+  365  history > history1.txt
+  366  pwd
+  367  mkdir Lessons
+  368  cd Lessons/
+  369  mkdir SDLC/HTML/Linux
+  370  mkdir -p SDLC/HTML/Linux
+  371  ls
+  372  mkdir -p HTML/Linux
+  373  ls
+  374  mkdir Linux
+  375  ls
+  376  echo "In an essay, article, or book, an introduction (also known as a prolegomenon) is a
+  377  beginning section which states the purpose and goals of the following writing. This is
+  378  generally followed by the body and conclusion" > introduktion.txt
+  379  ls
+  380  cd SDLC
+  381  echo "Software Development Life Cycle (SDLC) is a process used by the software industry to
+  382  design, develop and test high quality softwares. The SDLC aims to produce a highquality software that meets or exceeds customer expectations, reaches completion
+  383  within times and cost estimates." > sdls.txt
+  384  touch agile.txt
+  385  ls
+  386  cat sdls.txt
+  387  mkdir DevOps Waterfall
+  388  ls
+  389  mv sdls.txt sdlc.txt
+  390  ls
+  391  cd DevOps/
+  392  touch Dev.txt Ops.txt
+  393  ls
+  394  cd ..
+  395  cd Waterfall/
+  396  touch phases.txt advantages.txt
+  397  cd ../../
+  398  cd HTML/
+  399  echo "HTML stands for Hyper Text Markup Language. HTML is the standard markup
+  400  language for creating Web pages. HTML describes the structure of a Web page. HTML
+  401  consists of a series of elements. HTML elements tell the browser how to display the
+  402  content." > html.txt
+  403  touch cascades.css javascript.js
+  404  ls
+  405  pwd
+  406  mkdir Lessons
+  407  rm -rf lessons
+  408  ls
+  409  rmdir Lessons
+  410  rm -rf
+  411  ls
+  412  rm -rf Lessons
+  413  ls
+  414  clear
+  415  mkdir Lessons
+  416  pwd
+  417  ls
+  418  cd Lessons/
+  419  mkdir SDLC HTML LINUX
+  420  LS
+  421  ls
+  422  mv LINUX Linux
+  423  ls
+  424  cd SDLC/
+  425  echo "Software Development Life Cycle (SDLC) is a process used by the software industry to
+design, develop and test high quality softwares. The SDLC aims to produce a highquality software that meets or exceeds customer expectations, reaches completion
+within times and cost estimates." > sdlc.txt
+  426  touch agile.txt
+  427  mkdir DevOps Waterfall
+  428  ls
+  429  cat sdlc.txt
+  430  cd DevOps/
+  431  touch Dev.txt Ops.txt
+  432  ls
+  433  cd ..
+  434  cd Waterfall/
+  435  touch phases.txt advantages.txt
+  436  ls
+  437  cd ../../
+  438  ld
+  439  ls
+  440  cd HTML/
+  441  echo "HTML stands for Hyper Text Markup Language. HTML is the standard markup
+language for creating Web pages. HTML describes the structure of a Web page. HTML
+consists of a series of elements. HTML elements tell the browser how to display the
+content." > html.txt
+  442  touch cascades.css javascript.js
+  443  ls
+  444  cat html.txt
+  445  cd ..
+  446  cd Linux/
+  447  echo "An operating system (OS) is system software that manages computer hardware,
+software resources, and provides common services for computer programs" > operatingsys.txt
+  448  mkdir CLI GUI
+  449  cd CLI/
+  450  touch basics.txt advanced.txt
+  451  cd..
+  452  cd ..
+  453  cd GUI/
+  454  touch ubuntu.txt debian.txt mint.txt red_hat.txt
+  455  ls
+  456  cd ..
+  457  cd CLI/
+  458  mkdir Commands
+  459  cd Commands/
+  460  echo "ls command lists the current directory contents." > ls.txt
+  461  echo "pwd command shows the user’s current path." > pwd.txt
+  462  echo "cd [dir] command changes the current directory" > cd.txt
+  463  echo "cp command copies a file to another location" > cp.txt
+  464  man ls -a
+  465  man ls -a > ls-a.txt
+  466  ls
+  467  man ls -al > ls_al.txt
+  468  cat ls_al.txt
+  469  man ls -c > ls_c.txt
+  470  man ls -l > ls_l.txt
+  471  man ls -b > ls_b.txt
+  472  ls
+  473  cd ../../../
+  474  tree
+  475  history > history_lessons.txt
+nurdan@NURDAN-CAKIR:~/Lessons$ cd..
+cd..: command not found
+nurdan@NURDAN-CAKIR:~/Lessons$ cd ..
+nurdan@NURDAN-CAKIR:~$

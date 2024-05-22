@@ -1,0 +1,131 @@
+ 1004  mkdir ABC_College
+ 1005  cd ABC_College/
+ 1006  ls -l
+ 1007  mkdir Futsal Basketball Swimming
+ 1008  ls
+ 1009  cd Futsal/
+ 1010  ls -al
+ 1011  mkdir Futsal_Women Futsal_Men
+ 1012  ls
+ 1013  cd ../Basketball/
+ 1014  ls -al
+ 1015  mkdir Basketball_Women Basketball_Men
+ 1016  ls
+ 1017  ls -al
+ 1018  cd ../Swimming/
+ 1019  ls -al
+ 1020  mkdir Swimming_Men Swimming_Women
+ 1021  ls -al
+ 1022  pwd
+ 1023  cd Swimming_Women/
+ 1024  mkdir Freestyle Butterfly
+ 1025  cd ../Swimming_Men/
+ 1026  mkdir Freestyle Butterfly
+ 1027  LS
+ 1028  ls
+ 1029  cd ../../Futsal/Futsal_Women/
+ 1030  ls
+ 1031  touch Emma Olivia Isabella Mia Sophia
+ 1032  echo "Futsal_Goalkeeper" > Emma
+ 1033  echo "Futsal_Defender" > Olivia
+ 1034  echo "Futsal_Winger" > Isabella 
+ 1035  echo "Futsal_Winger" > Mia 
+ 1036  echo "Futsal_Pivot" > Sophia 
+ 1037  chmod 660 Isabella 
+ 1038  ls -l
+ 1039  cd ../Futsal_Men/
+ 1040  echo "Futsal_Goalkeeper" > Robert
+ 1041  echo "Futsal_Defender" > Martin
+ 1042  echo "Futsal_Winger" > James
+ 1043  echo "Futsal_Winger" > Liam
+ 1044  echo "Futsal_Pivot" > Lucas
+ 1045  ls
+ 1046  chmod u=rw Martin
+ 1047  ls -l
+ 1048  cd ../../Basketball/Basketball_Women/
+ 1049  ls
+ 1050  cat > Ava
+ 1051  cat > Evelyn
+ 1052  cat > Hazel
+ 1053  cat > Bella
+ 1054  ls
+ 1055  echo "Basketbal_Power-Forward" >> ~/ABC_College/Futsal/Futsal_Women/Olivia 
+ 1056  cp ../../Futsal/Futsal_Women/Olivia .
+ 1057  ls
+ 1058  cat Olivia 
+ 1059  ls -al
+ 1060  cd ~/ABC_College/Basketball/Basketball_Men/
+ 1061  touch Logan Jack Joseph Matthew David
+ 1062  ls
+ 1063  echo "Basketball_Point-Guard" > Logan 
+ 1064  echo "Basketball_Shooting-Guard" > Jack 
+ 1065  echo "Basketball_Center" > Joseph
+ 1066  echo "Basketball_Power-Forward" > Matthew 
+ 1067  echo "Basketball_Small-Forward" > David 
+ 1068  ls -al
+ 1069  chmod 444 David
+ 1070  ls -l
+ 1071  cd ../../Swimming/Swimming_Women/Freestyle/
+ 1072  echo "Swimming_Freestyle" > Scarlett
+ 1073  echo "Swimming_Freestyle" >> ~/ABC_College/Futsal/Futsal_Women/Mia 
+ 1074  cp ~/ABC_College/Futsal/Futsal_Women/Mia .
+ 1075  ls
+ 1076  cat Mia
+ 1077  cd ../Butterfly/
+ 1078  echo "Swimming_Butterfly" > Ellie
+ 1079  echo "Swimming_Butterfly" >> ~/ABC_College/Futsal/Futsal_Women/Emma 
+ 1080  cp ~/ABC_College/Futsal/Futsal_Women/Emma .
+ 1081  ls
+ 1082  cat Emma 
+ 1083  cd ../../Swimming_Men/
+ 1084  echo "Swimming_Freestyle" > Carter
+ 1085  echo "Swimming_Freestyle" >> ~/ABC_College/Futsal/Futsal_Men/Robert 
+ 1086  echo "Swimming_Freestyle" >> ~/ABC_College/Basketball/Basketball_Men/Joseph 
+ 1087  cp ~/ABC_College/Futsal/Futsal_Men/Robert .
+ 1088  cp ~/ABC_College/Basketball/Basketball_Men/Joseph .
+ 1089  ls
+ 1090  cat Robert 
+ 1091  cd ../Butterfly/
+ 1092  echo "Swimming_Butterfly" > Isaac
+ 1093  ls
+ 1094  chmod 070 Isaac 
+ 1095  ls -l
+ 1096  echo "Swimming_Butterfly" >> ~/ABC_College/Futsal/Futsal_Men/Martin 
+ 1097  cp ../../../Futsal/Futsal_Men/Martin .
+ 1098  ls
+ 1099  cat Martin 
+ 1100  ~/ABC_College/
+ 1101  CD
+ 1102  cd ~/ABC_College/
+ 1103  tree
+ 1104  history > Linux_Worksop_2
+ 1105  cd ..
+ 1106  history > Linux_Worksop_2
+ 1107  cd ~/ABC_College/Futsal/Futsal_Women/
+ 1108  rm -r Sophia 
+ 1109  ls
+ 1110  mv Mia ../../Basketball/Basketball_Women/
+ 1111  cd ../../Basketball/Basketball_Women/
+ 1112  ls -al
+ 1113  cat Mia 
+ 1114  vi Mia
+ 1115  pwd
+ 1116  mv ~/ABC_College/Swimming/Swimming_Women/Butterfly/Ellie ~/ABC_College/Futsal/Futsal_Women/
+ 1117  cd ../../Futsal/Futsal_Women/
+ 1118  nano Ellie 
+ 1119  echo "Futsal_Pivot" >> ~/ABC_College/Swimming/Swimming_Women/Freestyle/Scarlett 
+ 1120  cp ~/ABC_College/Swimming/Swimming_Women/Freestyle/Scarlett .
+ 1121  ls
+ 1122  cat ../Futsal_Men/Martin 
+ 1123  cd ../Futsal_Men/
+ 1124  pwd
+ 1125  ls L*
+ 1126  ls *m*
+ 1127  ls *[Mm]*
+ 1128  cd ~/ABC_College/Basketball/Basketball_Women/
+ 1129  mv Ava Eve
+ 1130  ls
+ 1131  ls -al
+ 1132  tree ~/ABC_College/
+ 1133  cd ../../../
+ 1134  history > Linux_Workshop

@@ -1,0 +1,32 @@
+nurdan@NURDAN-CAKIR:~$ rm -rf SDLC
+nurdan@NURDAN-CAKIR:~$ cd Lessons/
+nurdan@NURDAN-CAKIR:~/Lessons$ ls
+HTML  Linux  SDLC  history_lessons.txt
+nurdan@NURDAN-CAKIR:~/Lessons$ cd SDLC/
+nurdan@NURDAN-CAKIR:~/Lessons/SDLC$ ls
+DevOps  Waterfall  agile.txt  sdlc.txt
+nurdan@NURDAN-CAKIR:~/Lessons/SDLC$ cd ..
+nurdan@NURDAN-CAKIR:~/Lessons$ rm -rf SDLC
+nurdan@NURDAN-CAKIR:~/Lessons$ ls
+HTML  Linux  history_lessons.txt
+nurdan@NURDAN-CAKIR:~/Lessons$ cd Linux/
+nurdan@NURDAN-CAKIR:~/Lessons/Linux$ rm -rf Commands
+nurdan@NURDAN-CAKIR:~/Lessons/Linux$ ls
+CLI  GUI  operatingsys.txt
+nurdan@NURDAN-CAKIR:~/Lessons/Linux$ cd ..
+nurdan@NURDAN-CAKIR:~/Lessons$ history > history_deleted.txt
+nurdan@NURDAN-CAKIR:~/Lessons$ tail -12 history_deleted.txt
+  485  cd Lessons/
+  486  ls
+  487  cd SDLC/
+  488  ls
+  489  cd ..
+  490  rm -rf SDLC
+  491  ls
+  492  cd Linux/
+  493  rm -rf Commands
+  494  ls
+  495  cd ..
+  496  history > history_deleted.txt
+nurdan@NURDAN-CAKIR:~/Lessons$ cd ..
+nurdan@NURDAN-CAKIR:~$
